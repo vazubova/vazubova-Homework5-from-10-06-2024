@@ -37,9 +37,19 @@ public class Main {
             }
         }
 
+        int year = 2021;
+
+        if ((year > 1584) && ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))) {
+
+            System.out.println(year + " год является високосным");
+        } else {
+
+            System.out.println(year + " год не является високосным");
+        }
+
         int deliveryDistance = 95;
 
-        if (deliveryDistance <=20) {
+        if (deliveryDistance <= 20) {
 
             System.out.println("Потребуется дней: 1");
         }
@@ -117,11 +127,7 @@ public class Main {
 
         }
 
-        }
-
-
-
-
-
-
     }
+
+
+}
