@@ -16,35 +16,38 @@ public class Main {
         int clientDeviceYear = 2010;
         int clientOS2 = 1;
 
-        if (clientOS2 == 0) {
+        if (clientOS2 == 0 && clientDeviceYear >= 2015) {
 
-            if (clientDeviceYear >= 2015) {
+            System.out.println("Установите версию приложения для iOS по ссылке");
 
-                System.out.println("Установите версию приложения для iOS по ссылке");
             } else {
                 System.out.println("Установите облегченную версию приложения для iOS по ссылке");
             }
 
 
-        } else if (clientOS2 == 1) {
+         if (clientOS2 == 1 && clientDeviceYear >= 2015) {
 
-            if (clientDeviceYear < 2015) {
 
-                System.out.println("Установите облегченную версию приложения для Android по ссылке");
+            System.out.println("Установите облегченную версию приложения для Android по ссылке");
             } else {
 
                 System.out.println("Установите версию приложения для Android по ссылке");
-            }
+
         }
 
         int year = 2021;
 
-        if ((year > 1584) && ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))) {
+        if ((year >= 1584) && ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))) {
 
             System.out.println(year + " год является високосным");
         } else {
 
             System.out.println(year + " год не является високосным");
+        }
+
+        if (year < 1584) {
+
+            System.out.println("Нет возможности определить, явялется ли год високосным, так как опредилание високосного года появились в 1584 году");
         }
 
         int deliveryDistance = 95;
