@@ -20,18 +20,18 @@ public class Main {
 
             System.out.println("Установите версию приложения для iOS по ссылке");
 
-            } else {
-                System.out.println("Установите облегченную версию приложения для iOS по ссылке");
-            }
+        } else {
+            System.out.println("Установите облегченную версию приложения для iOS по ссылке");
+        }
 
 
-         if (clientOS2 == 1 && clientDeviceYear >= 2015) {
+        if (clientOS2 == 1 && clientDeviceYear >= 2015) {
 
 
             System.out.println("Установите облегченную версию приложения для Android по ссылке");
-            } else {
+        } else {
 
-                System.out.println("Установите версию приложения для Android по ссылке");
+            System.out.println("Установите версию приложения для Android по ссылке");
 
         }
 
