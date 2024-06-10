@@ -59,7 +59,69 @@ public class Main {
             System.out.println("Нет доставки");
         }
 
+        int monthNumber = 12;
+
+        switch (monthNumber) {
+
+            case 1:
+                System.out.println("Зимний сезон");
+                break;
+
+            case 2:
+                System.out.println("Зимний сезон");
+                break;
+
+            case 3:
+                System.out.println("Весенний сезон");
+                break;
+
+            case 4:
+                System.out.println("Весенний сезон");
+                break;
+
+            case 5:
+                System.out.println("Весенний сезон");
+                break;
+
+            case 6:
+                System.out.println("Летний сезон");
+                break;
+
+            case 7:
+                System.out.println("Летний сезон");
+                break;
+
+            case 8:
+                System.out.println("Летний сезон");
+                break;
+
+            case 9:
+                System.out.println("Осенний сезон");
+                break;
+
+            case 10:
+                System.out.println("Осенний сезон");
+                break;
+
+            case 11:
+                System.out.println("Осенний сезон");
+                break;
+
+            case 12:
+                System.out.println("Зимний сезон");
+                break;
+
+            default:
+                System.out.println("Невозможно определить сезон");
+
+
         }
+
+        }
+
+
+
+
 
 
     }
