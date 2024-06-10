@@ -6,13 +6,9 @@ public class Main {
         if (clientOS == 0) {
 
             System.out.println("Установите версию приложения для iOS по ссылке");
-        }
-
-        else if (clientOS == 1) {
+        } else if (clientOS == 1) {
             System.out.println("Установите версию приложения для Android по ссылке");
-        }
-
-        else {
+        } else {
 
             System.out.println("Нет возможности идентифицировать операционную систему");
         }
@@ -25,31 +21,45 @@ public class Main {
             if (clientDeviceYear >= 2015) {
 
                 System.out.println("Установите версию приложения для iOS по ссылке");
-            }
-
-            else {
+            } else {
                 System.out.println("Установите облегченную версию приложения для iOS по ссылке");
             }
 
 
-        }
-        else if (clientOS2 == 1) {
+        } else if (clientOS2 == 1) {
 
             if (clientDeviceYear < 2015) {
 
                 System.out.println("Установите облегченную версию приложения для Android по ссылке");
-            }
-
-            else {
+            } else {
 
                 System.out.println("Установите версию приложения для Android по ссылке");
             }
         }
 
+        int deliveryDistance = 95;
+
+        if (deliveryDistance <=20) {
+
+            System.out.println("Потребуется дней: 1");
+        }
+
+        if (deliveryDistance > 20 && deliveryDistance <= 60) {
+
+            System.out.println("Потребуется дней: 2");
+        }
+
+        if (deliveryDistance > 60 && deliveryDistance <= 100) {
+
+            System.out.println("Потребуется дней: 3");
+        }
+
+        if (deliveryDistance > 100) {
+
+            System.out.println("Нет доставки");
+        }
+
+        }
 
 
     }
-
-
-
-}
